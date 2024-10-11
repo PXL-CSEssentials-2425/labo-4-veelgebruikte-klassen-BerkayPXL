@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
@@ -148,6 +149,13 @@ namespace PasswordMeter
             {
                 passwordTextBox.Text = passwordBuilder.ToString();
             }
+
+            string input = Interaction.InputBox("Type close to exit", "Afsluiten", "Close");
+
+            if(input.Equals("close", StringComparison.OrdinalIgnoreCase))
+            {
+                this.Close();
+            }
         }
-    }
+    }                                                   
 }
