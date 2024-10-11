@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
         <TextBlock Margin="20" FontSize="20">Username</TextBlock>
-        <TextBox Name="userNameTextBox" Margin="20 0" FontSize="20"></TextBox>
+        <TextBox x:Name="usernameTextBox" Margin="20 0" FontSize="20"></TextBox>
         <TextBlock Margin="20" FontSize="20">Password</TextBlock>
         <TextBox Name="passwordTextBox" Margin="20 0 20 20" FontSize="20"></TextBox>
         <Button Name="passwordMeterButton" Margin="20" FontSize="20" Click="passwordMeterButton_Click">
